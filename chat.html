@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/chat.css">
+    <title>Чат</title>
+</head>
+<body>
+    <div class="chat-body">
+        <div class="chat-header">
+            <div class="user-info">
+                <img src="/icons/default-avatar.png" alt="Аватар пользователя" id="user_avatar">
+                <div class="user-info__status">
+                    <p id="username">Денис Шляхтин</p>
+                    <p id="online_status">Оффлайн</p>
+                </div>
+            </div>
+            <div class="chat-settings">
+                <div id="chat_icon">• • •</div>
+                <ul class="chat-settings__body"></ul>
+            </div>
+        </div>
+        <div class="chat-display">
+            <p class="message-body incoming">Привет</p>
+            <p class="message-body my">Здарова</p>
+            <p class="message-body my">Как дела?</p>
+            <p class="message-body incoming">ЗБС)</p>
+            <p class="message-body incoming">
+                Тут не так давно купил машину, а она не ездит, отогнал на эвакуаторе в сервис, взяли 2к, кстати, когда я работал на эвакуаторе часто возил маишны в один сервис, который мне платил за это, но вот Петрович прямо рукастый мужик, когда мы с ним бухали года 2 назад в лесу с палатками, которые мы купили, когда поехали забирать лодку у человека в Архангельк, в котором у меня живет бабушка по отцовской линии.
+            </p>
+            <p class="message-body my">
+                Так то прикольно было когда в Архангельске мы ходили по набережной, где встретили Васю Косого, прямо вообще нормальный мужик, купил нам коробку сока за 10 рублей, которые украл у бомжа, Геннадича, который нам играл пол часа, после того, как мы подарили ему баян. 
+            </p>
+        </div>
+        <div class="chat-input">
+            <textarea type="text" id="message_input" placeholder="Введите сообщение..."></textarea>
+            <input type="submit" id="message_send" value="Отправить">
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/chat.js"></script>
+</body>
+</html>
