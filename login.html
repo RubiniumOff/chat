@@ -4,29 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login.css">
     <title>Вход</title>
 </head>
 <body>
     <div class="form">
-        <div class="form-type">
-            <h2>Вход</h2>
-            <h2>Регистрация</h2>
+        <div class="login-img">
+            <img src="/img/login-img.png" alt="">
+            <img src="/img/login-img.png" alt="" class="back">
         </div>
-        <form action="#" data-form_type="auth">
-            <label class="login">
-                <img src="/icons/login.png" alt="Иконка логина">
-                <input type="text">
-            </label>
-            <label class="password">
-                <img src="/icons/password.png" alt="Иконка пароля">
-                <input type="password">
-            </label>
-            <label class="remember">
-                <input type="checkbox">
-                <p>Запомить меня</p>
-            </label>
-            <button>Войти</button>
-        </form>
+        <div class="form-body">
+            <div class="form-type">
+                <h2>Вход</h2>
+                <h2>Регистрация</h2>
+            </div>
+            <form action="/loginme" data-form_type="auth" method="post">
+                <label class="login">
+                    <!-- <img src="/icons/login.png" alt="Иконка логина"> -->
+                    <input type="text" placeholder="E-mail" name="login">
+                </label>
+                <label class="password">
+                    <!-- <img src="/icons/password.png" alt="Иконка пароля"> -->
+                    <input type="password" placeholder="Пароль" name="password">
+                </label>
+                <label class="remember">
+                    <input type="checkbox" checked>
+                    <p>Запомить меня</p>
+                </label>
+                <button>Войти</button>
+            </form>
+        </div>
     </div>
 </body>
 </html>
